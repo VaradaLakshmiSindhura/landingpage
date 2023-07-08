@@ -1,0 +1,58 @@
+<!Doctype Html>
+<html>
+<head>
+<meta charset=utf-8/>
+<title></title>
+<style type="text/css">
+body {margin:50px}
+</style>
+</head>
+
+<body>
+ <h1 align="center">Caluculator<b></h1><br><br>
+<form>
+  1st number:<input type="text" id="first number"/> <br> 
+  2nd number:<input type="text" id="second number"/> <br>
+  <input type="button" onclick="addition()" value="Addition"/> 
+  <input type="button" onclick="subtraction()" value="subtraction"/>
+  <input type="button" onclick="multiplication()" value="MUL"/>
+  <input type="button" onclick="divideby()" value="Divide by"/>
+</form>
+<p>The Result is:
+<span id="result"></span>
+</p>
+</body>
+
+<script>
+ 
+   function addition()
+   {
+     
+	 num1=doucment.getByElementId("first number").value;
+	 num2=doucment.getByElementId("second number").value;
+	 document.getByElementId("result").innerHtml=num1+num2;
+	}
+	 function subtraction()
+   {
+     
+	 num1=doucment.getByElementId("first number").value;
+	 num2=doucment.getByElementId("second number").value;
+	 document.getByElementId("result").innerHtml=num1-num2;
+	}
+	 function multiplication()
+   {
+     
+	 num1=doucment.getByElementId("first number").value;
+	 num2=doucment.getByElementId("second number").value;
+	 document.getByElementId("result").innerHtml=num1*num2;
+	}
+	 function divideby()
+   {
+     
+	 num1=doucment.getByElementId("first number").value;
+	 num2=doucment.getByElementId("second number").value;
+	 document.getByElementId("result").innerHtml=num1/num2;
+	}
+	</script>
+	
+</html>
